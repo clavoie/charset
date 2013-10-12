@@ -13,7 +13,7 @@ Add the following dependency to your `project.clj` file:
 
 ## Documentation
 
-tbd
+[API](http://clavoie.github.io/charset/)
 
 ## License
 
