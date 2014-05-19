@@ -32,39 +32,39 @@
 
 (defn aliases
   "Lists the aliases of a Charset returned as a Clojure set"
-  [charset]
+  [^Charset charset]
   (set (.aliases charset)))
 
 (defn charset-name
   "Returns the name of a Charset"
-  [charset]
+  [^Charset charset]
   (.name charset))
 
 (defn decoder
   "Creates a new CharsetDecoder object. See for details:
    http://docs.oracle.com/javase/7/docs/api/java/nio/charset/Charset.html#newDecoder()"
-  [charset]
+  [^Charset charset]
   (.newDecoder charset))
 
 (defn encode?
   "Tests if this Charset supports encoding."
-  [charset]
+  [^Charset charset]
   (.canEncode charset))
 
 (defn encoder
   "Creates a new CharsetEncoder object. See for details:
    http://docs.oracle.com/javase/7/docs/api/java/nio/charset/Charset.html#newEncoder()"
-  [charset]
+  [^Charset charset]
   (.newEncoder charset))
 
 (defn display-name
   "Returns the display name of a Charset"
-  [charset]
+  [^Charset charset]
   (.displayName charset))
 
 (defn registered?
   "Tells whether or not this Charset is registered in the IANA Charset Registry.
    See for details:
    http://docs.oracle.com/javase/7/docs/api/java/nio/charset/Charset.html#isRegistered()"
-  [charset]
+  [^Charset charset]
   (.isRegistered charset))
