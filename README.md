@@ -7,9 +7,7 @@ Clojure wrappers around some of the class and instance methods of java.nio.chars
 
 Add the following dependency to your `project.clj` file:
 
-```
-[charset "1.0.1"]
-```
+[![Clojars Project](http://clojars.org/charset/latest-version.svg)](http://clojars.org/charset)
 
 ## Documentation
 
