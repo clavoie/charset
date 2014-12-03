@@ -12,8 +12,8 @@
             of the Charset class. Throws an IllegalArgumentException if charset
             is neither.
   "
-  ([^String value] (.getBytes value))
-  ([^String value charset]
+  (^bytes [^String value] (.getBytes value))
+  (^bytes [^String value charset]
    (cond
     (string? charset) (.getBytes value (str charset))
     (instance? Charset charset) (.getBytes value ^Charset charset)
@@ -23,6 +23,7 @@
   "Returns value encoded as an ascii byte[]
 
   value - the value to get the bytes of"
+  ^bytes
   [value]
   (get-bytes value ascii))
 
@@ -30,6 +31,7 @@
   "Returns value encoded as a utf-8 byte[]
 
   value - the value to get the bytes of"
+  ^bytes
   [value]
   (get-bytes value utf-8))
 
@@ -37,5 +39,6 @@
   "Returns value encoded as a utf-16 byte[]
 
   value - the value to get the bytes of"
+  ^bytes
   [value]
   (get-bytes value utf-16))
