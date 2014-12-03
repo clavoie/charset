@@ -1,4 +1,4 @@
-(defproject charset "1.2.1"
+(defproject charset "1.2.2-SNAPSHOT"
   :description "Clojure wrappers around java.nio.charset.Charset"
   :url "https://github.com/clavoie/charset.git"
   :license {:name "Eclipse Public License"
